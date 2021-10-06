@@ -18,7 +18,7 @@ import java.util.List;
 import static by.itacademy.javaenterprise.utils.IPUtils.getIP;
 import static by.itacademy.javaenterprise.web.entity.MACAdress.getMacClient;
 
-@WebFilter(urlPatterns = "/restfirst")
+@WebFilter("/norest/*")
 public class MACFilter extends HttpFilter {
     private static final String NOT_ALLOWED_MAC = "Данному МАС адресу не разрешено подключаться!\n";
     List<String> whiteListMAC = new ArrayList<>();

@@ -20,7 +20,7 @@ import static by.itacademy.javaenterprise.utils.IPUtils.getIP;
 import static by.itacademy.javaenterprise.web.entity.MACAdress.getMacClient;
 
 
-@WebServlet(urlPatterns = "/restfirst")
+@WebServlet("/restfirst")
 public class FirstRestServlet extends HttpServlet {
     AtomicLong requestCount = new AtomicLong(0);
     private static final String TASK_ADD_ERROR = "Произошла ошибка, задача не добавлена !\n";

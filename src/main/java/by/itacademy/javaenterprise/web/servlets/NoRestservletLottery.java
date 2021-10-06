@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 import java.time.LocalDateTime;
 import java.util.Random;
 
-@WebServlet(urlPatterns = "/norest/*")
+@WebServlet("/norest/*")
 public class NoRestservletLottery extends HttpServlet {
     private int random;
     private final static int LUCKYNUMBER = 20;

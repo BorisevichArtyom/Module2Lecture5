@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/restfirst")
+@WebFilter("/restfirst")
 public class FilterContent extends HttpFilter {
     private final static org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger(FilterContent.class);
     private static final String ALLOWED_TYPE = "text/plain";

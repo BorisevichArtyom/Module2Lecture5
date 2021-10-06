@@ -17,7 +17,7 @@ import java.util.List;
 
 import static by.itacademy.javaenterprise.utils.IPUtils.getIP;
 
-@WebFilter(urlPatterns = "/filterip/*")
+@WebFilter("/restfirst")
 public class FilterIP extends HttpFilter {
     private static final String NOT_ALLOWED_IP = "Данному IP адресу не разрешено подключаться!\n";
     List<String> whiteListIP = new ArrayList<>();
