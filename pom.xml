@@ -47,10 +47,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
                 <version>3.3.2</version>
+                <configuration>
+                    <webXml>
+                        src/main/webapp/WEB-INF/web.xml
+                    </webXml>
+                </configuration>
             </plugin>
         </plugins>
         </pluginManagement>
