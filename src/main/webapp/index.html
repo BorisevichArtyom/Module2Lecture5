@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+<body>
+<form action="rest" method="POST">
+    Name: <input name="username" />
+    <br><br>
+    Age: <input name="userage" />
+    <br><br>
+    Gender: <input type="radio" name="gender" value="female" checked />Female
+    <input type="radio" name="gender" value="male" />Male
+    <br><br>
+    Girl: <select name="girl">
+    <option>Lussile</option>
+    <option>Adrianna</option>
+    <option>Annabel</option>
+    <option>Zigfrida</option>
+</select>
+    <br><br>
+    Your time:
+    <input type="checkbox" name="time" value="one hour" checked />one hour
+    <input type="checkbox" name="time" value="two hours" checked />two hours
+    <input type="checkbox" name="time" value="night" checked />night
+    <br><br>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
